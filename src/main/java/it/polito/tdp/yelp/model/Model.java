@@ -45,7 +45,7 @@ public class Model {
 		
 		Review rMax = null;
 		int max = 0;
-		for(Review r : this.grafo.vertexSet()) {      //a quanto pare il nbumero di archi è giusto ma
+		for(Review r : this.grafo.vertexSet()) {      //a quanto pare il numero di archi è giusto ma
 			if(this.grafo.degreeOf(r) > max) {        //la review che trova è sbagliata, non so che fare sinceramente
 				max = this.grafo.degreeOf(r); 
 				rMax = r;
