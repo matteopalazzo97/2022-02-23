@@ -46,6 +46,9 @@ public class FXMLController {
     	System.out.println(this.cmbLocale.getValue().toString());
     	
     	this.model.creaGrafo(this.cmbLocale.getValue());
+    	this.txtResult.setText("Grafo creato.\n");
+    	this.txtResult.appendText("# vertici: " + this.model.getNumVertici() + "\n");
+    	this.txtResult.appendText("# vertici: " + this.model.getNumArchi() + "\n");
 
     }
 

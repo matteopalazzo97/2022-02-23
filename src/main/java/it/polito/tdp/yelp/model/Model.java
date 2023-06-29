@@ -69,4 +69,14 @@ public class Model {
 	public List<Edge> getEdges (Business locale, Map<String, Review> mappa) {
 		return this.dao.getEdges(locale, mappa);
 	}
+
+	public int getNumVertici() {
+		// TODO Auto-generated method stub
+		return this.grafo.vertexSet().size();
+	}
+
+	public int getNumArchi() {
+		// TODO Auto-generated method stub
+		return this.grafo.edgeSet().size();
+	}
 }
